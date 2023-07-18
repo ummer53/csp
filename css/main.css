@@ -19,6 +19,7 @@ body {
     background-size: cover;
 }
 
+
 * {
     -moz-box-sizing: border-box; /* Firexfox */
     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
@@ -72,6 +73,59 @@ marquee {
     border-radius: 5px;
     height: 400px;
     overflow: scroll;
+    padding: 10px;
+}
+.path-link  {
+    padding-top : 10px; 
+}
+
+.mode-button {
+    text-align: right;
+}
+
+
+
+.mode-button #dark-mode-toggle {
+    background: #000;
+    border: 1px solid #75c1f6;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+/* style for calculator by default it is hidden */
+
+/* .hidden {
+    display: none;
+} */
+
+.calculator-body {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border-right: 1px solid #75c1f6;
+    width: 60%;
+    height: 600px;
+    /* overflow: hidden; */
+}
+
+.dark-mode .calculator-body {
+    background: #000;
+    color: #fff;
+}
+
+.dark-mode #calculator {
+    background: #000;
+    color: #fff;
+}
+
+.scrollable {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent;
 }
 
 details {
@@ -84,11 +138,23 @@ details {
     border-radius: 5px;
     overflow: scroll;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+legend {
+    padding-bottom: 10px;
 }
 
 fieldset {
-    border: 2px solid rgb(43, 129, 199);
+    padding-top: 10px;
+    margin-top:10px;
+    border: 2px none rgb(43, 129, 199);
     box-shadow: #1356d3 -5px 8px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent;
+}
+hr {
+    background-color: linear-gradient(to right, #9875f6, #ffffff);
 }
 
 iframe {
@@ -109,6 +175,17 @@ iframe:hover {
     box-shadow: rgb(30, 11, 202) 10px 10px 5px 0px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-style: normal;
+    font-family:serif, sans-serif, cursive;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,134,189,1) 31%, rgba(224,180,49,1) 63%, rgba(103,37,3,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* -----------------------------------------------------------------------------------------------------
                     Layout-> styles related to ids
   -----------------------------------------------------------------------------------------------------
@@ -117,7 +194,7 @@ iframe:hover {
 #container {
 
     background: linear-gradient(to bottom, #b9dc6f 0%, #24328f 100%);
-    width: 1100px;
+    width: 1250px;
     margin: auto;
     margin-top:0;
     padding-top: 0;
@@ -128,7 +205,6 @@ iframe:hover {
     background: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
-    border-bottom: 1px solid #75c1f6;
 
 }
 
@@ -157,10 +233,10 @@ iframe:hover {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    border-right: 1px solid #75c1f6;
+    border:none;
     width: 60%;
     height: 600px;
-    /* overflow: hidden; */
+     overflow: scroll; 
 
 }
 
@@ -168,11 +244,25 @@ iframe:hover {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    border-right: 1px solid #75c1f6;
+    border:none;
     width: 15%;
     height: 600px;
     overflow: scroll;
 }
+
+
+
+ #left-bar .career-paths details {
+    height :80px;
+    border-radius: 0%;
+    box-shadow: turquoise -5px -5px 0px 0px;
+ }
+
+ #left-bar .career-paths details:hover {
+    width: 105%;
+    height: 105%;
+ }
+v
 
 #left-bar details {
     box-shadow: #24328f 5px 5px 5px 0px;
@@ -188,7 +278,7 @@ iframe:hover {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    border-left: 1px solid #75c1f6;
+    border:none;
     width: 25%;
     height: 600px;
     overflow: scroll;
@@ -201,16 +291,7 @@ iframe:hover {
     border-top: 1px solid #75c1f6;
 }
 
-h1 {
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    font-style: normal;
-    font-family:serif, sans-serif, cursive;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,134,189,1) 31%, rgba(224,180,49,1) 63%, rgba(103,37,3,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 /*h3 {*/
 /*    color: black;*/
@@ -219,3 +300,99 @@ h1 {
 /*    padding: 5px;*/
 /*    font-family: 'Roboto Mono', monospace;*/
 /*}*/
+
+
+
+/*      
+         
+
+          DARK MODE STYLES
+
+*/
+
+
+.dark-mode h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-style: normal;
+    font-family:serif, sans-serif, cursive;
+    background: linear-gradient(90deg, rgb(192, 60, 148) 0%, rgba(15,134,189,1) 31%, rgba(224,180,49,1) 63%, rgba(103,37,3,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.dark-mode {
+    background-image: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode #header {
+    background: #000000;
+    color: #ffffff;
+}
+
+.dark-mode #main {
+    background: #000000;
+    color: #ffffff;
+}
+
+.dark-mode #main-body {
+    background: #000000;
+    color: #ffffff;
+}
+
+.dark-mode #main-body .path-link a{
+    color : magenta
+}
+
+.dark-mode #left-bar {
+    background: #000000;
+    color: rgb(0, 255, 13)
+}
+
+.dark-mode #left-bar .career-paths {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+
+.dark-mode #left-bar .career-paths details{
+    background: #a19393;
+    color: #ffffff;
+}
+
+.dark-mode #left-bar details:hover {
+    /* background: #000000; */
+    color: #000000;
+}
+.dark-mode #right-bar {
+    background: #000000;
+    color: #ffffff;
+}
+
+.dark-mode #footer {
+    background: #000000;
+    color: #ffffff;
+}
+
+.dark-mode .youtube-Links {
+    background: #cabdbd;
+    color: #ffffff;
+}
+
+.dark-mode .youtube-Links:hover {
+    background: #f8f3f3;
+    color: #ffffff;
+}
+
+.dark-mode .youtube-Links iframe {
+    background: #f8f3f3;
+    color: #ffffff;
+    box-shadow: tomato -5px 5px 5px 0px;
+    overflow: hidden;
+}
+              

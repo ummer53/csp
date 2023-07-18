@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    /* terminal x-terminal-emulator  */
+    <!-- /* terminal x-terminal-emulator  */ -->
     <meta charset="utf-8">
     <meta name="keywords" content="cookies, c, monster, Sesame Street">
     <meta name="description" content="I love cookies big and small, I love cookies I love them all.">
@@ -14,13 +14,16 @@
     <link rel="stylesheet" href="css/smallScreen.css"  media="(max-width: 1100px)">
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
     <link rel="shortcut icon" href="https://www.computerhope.com/favicon.ico">
+    <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 
 <body class="light-mode">
-    <button id ="dark-mode">Dark Mode</button>
+    
 <div id="container">
     <div id="header">
-
+        <div class="mode-button">
+            <button id ="dark-mode-toggle">Dark Mode</button>
+        </div>
         <div id="header-head">
             
             <img  class="logo" src="./Assets/images/CSP_logoquadrato_700.png" alt="computer-science-portal">
@@ -44,18 +47,16 @@
             </marquee>
         </div> <!-- #header-content -->
     </div> <!-- #header -->
+
+    <hr>
+    
+    
+
     <div id="main">
 
-        
-        <!-- <datalist id="mylist">
-            <p>Jobs</p>
-            <p>blogs</p>
-            <p>video lectures</p>
-        </datalist> -->
-
-        <div id="left-bar">
+        <div id="left-bar" class="scrollabble">
             
-            <details>
+            <!-- <details>
                 <summary>Java Developer</summary>
                 <h6>Java Developer</h6>
                 <h6>Java Developer</h6>
@@ -154,12 +155,12 @@
                 <h6>Technical Program Manager</h6>
                 <h6>Technical Program Manager</h6>
                 <h6>Technical Program Manager</h6>
-            </details>
+            </details> -->
         </div> <!-- #left-bar -->
-        <div id="main-body">
+        <div id="main-body" class="scrollabble">
             <h2>Web Developer</h2>
             <fieldset class="blog">
-                <legend>Java Developer</legend>
+                <legend>Web Developer</legend>
             
             <p>Web developers are responsible for designing and developing websites and website applications.
                 Using a variety of programming languages and web technologies, web developers manage site functionality,
@@ -193,8 +194,8 @@
                 </fieldset>
         </div> <!-- #main-body -->
 
-        <div id="right-bar">
-            <h4 class="right-bar-heading">Web developer roadmap</h4>
+        <div id="right-bar" class="scrollabble">
+            <h4 class="right-bar-heading">Video</h4>
             <section class="youtube-Links">
                 
                 <iframe class="video"  src="https://www.youtube.com/embed/t91_39rGBmU" title="YouTube video player" frameborder="0" allow="accelerometer;

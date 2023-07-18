@@ -119,8 +119,6 @@ iframe {
 #left-bar {
     text-align: center;
     background: #fff;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         padding: 20px;
         border-radius: 5px;
@@ -128,6 +126,34 @@ iframe {
         width: 100%;
         height: 600px;
         overflow: scroll;
+}
+
+
+    #left-bar .career-paths{
+        grid-gap: 20px;
+         display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        width: 100%;
+        overflow: scroll;
+     }
+
+     #left-bar .career-paths details {
+        height :80px;
+        border-radius: 0%;
+        box-shadow: turquoise 5px 5px 0px 0px;
+     }
+
+     #left-bar .career-paths details:hover {
+        width: 105%;
+        height: 105%;
+     }
+
+
+#left-bar h2 {
+    grid-column: span 4;
 }
 
 #right-bar {

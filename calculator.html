@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <div id="calculator" class="hide-calculator" style="display: none;">
+        <button id="calculator-button">Calculator</button>
+        <div id="calculator-body" class="hidden">
+            <hr>
+            <div class="calculator-display">
+                0
+            </div>
+            <hr>
+            <section class="calculator-keys">
+
+                <section class="key-row">
+                    <button id="numeric-key" class="key">7</button>
+                    <button id="numeric-key" class="key">8</button>
+                    <button id="numeric-key" class="key">9</button>
+                    <button id="operator-key" class="key">/</button>
+                </section>
+
+                <section class="key-row">
+                    <button id="numeric-key"  id="operator-key" class="key">4</button>
+                    <button id="numeric-key"  id="operator-key" class="key">5</button>
+                    <button id="numeric-key"  id="operator-key" class="key">6</button>
+                    <button id="operator-key" class="key">*</button>
+                </section>
+
+                <section class="key-row">
+                    <button id="numeric-key" class="key">1</button>
+                    <button id="numeric-key" class="key">2</button>
+                    <button id="numeric-key" class="key">3</button>
+                    <button id="operator-key" class="key">-</button>
+                </section>
+
+                <section class="key-row">
+                    <button id="numeric--key" class="key">0</button>
+                    <button class="key">.</button>
+                    <button id="equals-key" class="key">=</button>
+                    <button id="operator-key" class="key">+</button>
+                </section>
+                <section class="key-row">
+                    <button id="clear-key" class="key">C</button>
+                </section>
+
+            </section><!-- .calculator-keys -->
+        </div> <!-- .calculator-body -->
+    </div> <!---#calculator --->
+
+
+    <script src="./js/calculator.js"></script>
+</body>
+</html>

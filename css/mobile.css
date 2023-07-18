@@ -154,6 +154,30 @@ details {
     justify-content:space-around
 }
 
+#left-bar .career-paths{
+    display: block;
+    /* grid-gap: 20px;
+     display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: scroll;
+ }
+
+ #left-bar .career-paths details {
+    height :80px;
+    border-radius: 0%;
+    box-shadow: turquoise 5px 5px 0px 0px;
+ }
+
+ #left-bar .career-paths details:hover {
+    width: 105%;
+    height: 105%;
+ }
+
+
 #right-bar {
     text-align: center;
     background: #fff;
@@ -178,6 +202,13 @@ details {
         margin-bottom: 20px;
         margin-top: 20px;
         border: 1px solid #75c1f6;
+    }
+
+   .youtube-Links{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+
     }
 }
     
